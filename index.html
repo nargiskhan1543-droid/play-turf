@@ -1,0 +1,23 @@
+import { motion } from 'framer-motion'; export default function PlayTurf(){return (<div className='min-h-screen bg-black text-white font-sans'>
+
+<header className='relative p-10 text-center bg-gradient-to-r from-green-700 to-emerald-500'>
+<h1 className='text-6xl font-bold'>Play Turf</h1>
+<p className='mt-2 text-xl'>74, Diamond Harbour Rd, Khidirpur, Kolkata</p>
+<div className='mt-6 flex gap-4 justify-center'><a href='tel:+918337076060' className='bg-black px-6 py-3 rounded-2xl'>Call Now</a><a href='https://wa.me/918337076060' className='bg-white text-black px-6 py-3 rounded-2xl'>WhatsApp Booking</a></div>
+</header>
+<section className='p-6 grid md:grid-cols-3 gap-4'>
+{['2 Rooftop Turfs','Football & Cricket Ready','8 Ball Pool Zone'].map((t,i)=><motion.div whileHover={{scale:1.05}} key={i} className='bg-white/10 p-6 rounded-2xl shadow-xl'><h3 className='text-2xl font-bold'>{t}</h3><p className='mt-2 text-gray-300'>Premium experience for friends, tournaments and fun.</p></motion.div>)}
+</section>
+<section className='p-6'>
+<h2 className='text-4xl font-bold mb-4'>Gallery</h2>
+<div className='grid md:grid-cols-3 gap-4'>
+<img className='rounded-2xl w-full h-64 object-cover' src='/mnt/data/file_00000000e6f071fabafcc0966c9f0f22'/>
+<img className='rounded-2xl w-full h-64 object-cover' src='/mnt/data/file_00000000a98c71faa01da4294a8374a7'/>
+<img className='rounded-2xl w-full h-64 object-cover' src='/mnt/data/file_00000000228871fa9c2236b6f3354c6f'/>
+</div></section>
+<section className='p-6 grid md:grid-cols-2 gap-6'>
+<div className='bg-white/10 p-6 rounded-2xl'><h2 className='text-3xl font-bold'>Price List</h2><p className='mt-3 text-gray-300'>Contact for latest hourly rates, tournaments & events.</p></div>
+<div className='bg-white/10 p-6 rounded-2xl'><h2 className='text-3xl font-bold'>Find Us</h2><iframe className='w-full h-64 rounded-xl mt-3' src='https://www.google.com/maps?q=Play%20Turf%20Kolkata&output=embed'></iframe></div>
+</section>
+<footer className='p-8 text-center text-gray-400'>© 2026 Play Turf Kolkata • +91 83370 76060</footer>
+</div>)}
